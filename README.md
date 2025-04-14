@@ -81,8 +81,9 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 Figure 1.  Viewing a list of available genes in the database.  User database interaction via web is supported by Flask.
 
-<img src="figure/gene_list.png" align="center">
-
+<center>
+<img src="figure/gene_list.png" >
+</center>
 
 <br>
 
