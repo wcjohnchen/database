@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	
+	<body bgcolor='white'> </body>
+	
+        <title>
+            PolyADB4-LR
+        </title>
+
+	
+	<Center>
+	
+		<h1>  PolyADB4-LR Database  </h1> <br>
+		<!--<h1>   </h1>-->
+	
+	<img src='static/db.jpg' alt='db_image' width="7.5%" height="7.5%"> <br><br><br>
+	
+	<!--<link rel="stylesheet" type="text/css" herf= "{{ url_for('static', filename='styles/mainpage.css') }}" />-->
+    <body>
+	
+		<p>
+		Please enter gene symbol here.  To view a list of available genes, please enter 'LIST'.
+		</p>
+	
+		<form action="{{ url_for('query')}}"method="POST">
+			Gene: <input type='text' name='gene' placeholder='Enter gene symbol', size='17.5' /> <br><br><br>
+            <!--<input type='submit' value='Query'/> <br><br>-->
+        </form>
+        <p>
+            <!--Your inputs are: {{enters}}-->
+        </p>
+		
+		<p>
+			{{queries}}
+        </p>
+	
+	
+		<table class="table" style="border-collapse: separate", WIDTH=100%>
+			<tr class="table__header" style="background-color: #f5f5f5">
+			{% for header in headings %}
+			<th class="table__cell" style="text-align: center" >{{ header }}</th>
+			{% endfor %}
+			</tr>
+				
+			{% for row in data %}
+			<tr class="table__row">
+				{% for cell in row %}
+				<td class="table__cell" style="text-align: center" >{{ cell }}</td>
+				{% endfor %}
+			</tr>
+				
+			{% endfor %}
+			
+		</table>
+			
+
+	
+	</Center>
+	
+    </body>
+</html>
