@@ -16,13 +16,11 @@ III. Column Description
 
 IV. 
 
-V.
+V. Acknowledgements
 
-VI. Acknowledgements
+VI. References
 
-VII. References
-
-XI. Technologies
+VII. Technologies
 
 <br>
 
@@ -47,19 +45,7 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 <br>
 
-## III. Regression Models
-
-Hyperparameter optimization:
-
-Random forest: best parameters: {'max_depth': None, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 1550, 'oob_score': True}
-
-Decision tree: best parameters: {'max_depth': 15, 'max_features': 'auto'}
-
-Gradient boosting regression: best parameters: {'learning_rate': 0.01, 'max_depth': 10, 'max_features': 'auto', 'n_estimators': 4250, 'subsample': 0.15}
-
-Ridge regression: best parameters: {'alpha': 0.0}
-
-Lasso regression: best parameters: {'alpha': 0.001}
+## III. Column Description
 
 
 | Column | Description |
@@ -70,24 +56,14 @@ Lasso regression: best parameters: {'alpha': 0.001}
 |Type |  |
 |PSE |Percentage of samples which polyA sites were expressed. 
 |AvgRPM |Mean RPM of polyA site. |
-|mm10_pAid |
-|NumRefSeq |
-|NumLENCODE |
-|NumLRGETx |
-|polyAID |
-|polyAStregth |
-|SVM |
+|mm10_pAid |Conserved sites in mouse genome. |
+|NumRefSeq |Number of the polyA site reads annotated by RefSeq transcription end sites. |
+|NumLENCODE |Number of long-read transcription end sites (from the ENCODE4 PacBio IsoSeq dataset) that were matched to the polyA site location. |
+|NumLRGETx |Number of long-read transcription end sites (from the GTEx V9 ONT cDNA dataset) that were matched to the polyA site location. |
+|polyAID |Classification probability for putative polyA site within a sequence expected to occur (https://github.com/zhejilab/PolyaModelsHuman). |
+|polyAStregth |Score for the usage level of polyA site (https://github.com/zhejilab/PolyaModelsHuman). |
+|SVM |Predicted polyA site probability by support vector machine (polya_svm v1.1: https://exon.apps.wistar.org/polya_svm/). |
 
-
-
-**Figure 5**.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
-
-![](figure/train_rmse_lr.png)
-
-
-**Figure 6**.  Gradient boosting regression: test set: RMSE vs learing rate at specific estimators.
-
-![](figure/test_rmse_lr.png)
 
 
 <br>
