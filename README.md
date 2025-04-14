@@ -59,10 +59,15 @@ Ridge regression: best parameters: {'alpha': 0.0}
 Lasso regression: best parameters: {'alpha': 0.001}
 
 
-|Key |PasID |
-|---- | --- |
-|ads |chr3 |
-|tes |chr2 |
+| Column | Description |
+| ------ | ---- |
+|Key |chr3 | number of long-read transcription end sites (from the GTEx V9 ONT cDNA dataset) that were matched to the polyA site location. polyAID: classification probability for putative polyA site within a sequence expected to occur (https://github.com/zhejilab/PolyaModelsHuman).
+|Gene Symbol |chr2 |
+|PasID |
+|Type |
+|PSE |
+|AvgRPM |
+
 
 
 **Figure 5**.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
