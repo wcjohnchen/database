@@ -1,8 +1,10 @@
 # Database Management for Polyadenylation Sites
 
+
 <br>
 
 <img src="flask/static/db.jpg" width="12.5%" height="12.5%">
+
 
 <br>
 
@@ -14,15 +16,16 @@ II. Schema
 
 III. Column Description
 
-IV. 
+IV. F
 
-V. Acknowledgements
+V. Technologies
 
-VI. References
+VI. Abbreviation
 
-VII. Technologies
+VII. Acknowledgements
 
-VIII. Abbreviation
+VIII. References
+
 
 <br>
 
@@ -35,13 +38,37 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 ## II. Schema
 
+| Column Name | Data Type | Constraint |
+| ---- | ---- | ---- |
+|Key |VARCHAR(100) |PRIMARY KEY NOT NULL |
+|Gene Symbol |VARCHAR(40) |NOT NULL |
+|PasID | | |
+|Type | | |
+|PSE | | |
+|AvgRPM | | |
+|mm10_pAid | | |
+|NumRefSeq | | |
+|NumLENCODE | | |
+|NumLRGETx | | |
+|polyAID | | |
 
 
 
-**Figure 1**.  Histograms of the housing dataset.
 
-![](figure/histograms.png)
-
+CREATE TABLE IF NOT EXISTS polyadb4_lr (
+                                    key VARCHAR(100) PRIMARY KEY NOT NULL,
+                                    gene_symbol VARCHAR(40) NOT NULL,
+                                    PasID VARCHAR(40) NOT NULL,
+                                    type_main VARCHAR(2) NOT NULL,
+                                    PSE NUMERIC(4,1) CHECK(PSE >= 0), 
+                                    AvgRPM NUMERIC(10,2) CHECK(AvgRPM >=0), 
+                                    mm10_pAid VARCHAR(40),
+                                    NumRefSeq NUMERIC(10) CHECK(NumRefSeq >=0), 
+                                    NumLRENCODE NUMERIC(10) CHECK(NumLRENCODE >=0), 
+                                    NumLRGETx NUMERIC(10) CHECK(NumLRGETx >=0),
+                                    polyAID NUMERIC(5,4) CHECK(polyAID >=0), 
+                                    polyAStrength NUMERIC(10,4),
+                                    SVM NUMERIC(5,4) CHECK(SVM >=0))
 
 
 
@@ -51,11 +78,11 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 
 | Column | Description |
-| ------ | ---- |
+| ---- | ---- |
 |Key |Unique identification for PAS (gene symbol : chromosome : strand : position : type). |
 |Gene Symbol |Abbreviation for gene name. |
 |PasID |PAS identification (chromosome : strand : position). |
-|Type |Long-read-TES-supported polyA site category: TR: PAS found in terminal regions which are identified as aggregated overlapping 3’-most exon of isoform of each gene by RefSeq TES annotation; UR: upstream regions of TR;  DR: downstream regions of TR. |
+|Type |Long-read-TES-supported polyA site category: TR: PAS found in terminal regions, in which the regions are identified as aggregated overlapping 3’-most exon of isoform of each gene by RefSeq TES annotation; UR: upstream regions of TR;  DR: downstream regions of TR. |
 |PSE |Percentage of samples which PASs were expressed. |
 |AvgRPM |Mean RPM of PAS. |
 |mm10_pAid |Conserved sites in mouse genome. |
@@ -69,9 +96,20 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 <br>
 
+## IV. F
+
+**Figure 1**.  Histograms of the housing dataset.
+
+![](figure/histograms.png)
+
+
+
+<br>
+
 ## V. Technologies
 
-Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Git, Linux, Machine Learning, Deep Learning
+Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, VS Code, Git, Linux, Machine Learning, Deep Learning
+
 
 <br>
 
@@ -81,11 +119,13 @@ PAS: polyA site <br>
 
 TES: Transcription end site
 
+
 <br>
 
 ## VII. Acknowledgements
 
 I would like to express gratitude to Dr. Bin Tian’s lab for data availability and contribution.
+
 
 <br>
 
