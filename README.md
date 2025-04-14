@@ -1,6 +1,6 @@
 # Database Management for Polyadenylation Sites
 
-<img src="flask/static/db.jpg" width="17.5%" height="17.5%">
+<img src="flask/static/db.jpg" width="15%" height="15%">
 
 
 ## Table of Contents
@@ -23,7 +23,7 @@ VII. References
 
 ## I. Introduction
 
-P
+PolyADB4-LR database stores information for a specific set of polyadenylation (polyA) sites found in human genome using 3’READS+ deep sequencing that were additionally supported by long read sequencing, and data generated from machine learning.  Present polyA sites were annotated via NCBI database and by IsoQuant-assigned long reads of ENCODE and GTEx.  This database contains 658,880 entries, 638,089 unique polyA sites, and 33,614 unique genes, and is based on ~2.3 billion 3’READS+ sequencing reads and ~600 million long reads.
 
 
 
