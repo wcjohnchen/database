@@ -1,5 +1,7 @@
 # Database Management for Polyadenylation Sites
 
+<br>
+
 <img src="flask/static/db.jpg" width="12.5%" height="12.5%">
 
 <br>
@@ -61,7 +63,7 @@ Lasso regression: best parameters: {'alpha': 0.001}
 
 | Column | Description |
 | ------ | ---- |
-|Key |chr3 | number of long-read transcription end sites (from the GTEx V9 ONT cDNA dataset) that were matched to the polyA site location. polyAID: classification probability for putative polyA site within a sequence expected to occur (https://github.com/zhejilab/PolyaModelsHuman).
+|Key |number of long-read transcription end sites (from the GTEx V9 ONT cDNA dataset) that were matched to the polyA site location. polyAID: classification probability for putative polyA site within a sequence expected to occur (https://github.com/zhejilab/PolyaModelsHuman). |
 |Gene Symbol |chr2 |
 |PasID |
 |Type |
