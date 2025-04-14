@@ -3,13 +3,8 @@
 
 <br>
 
-<style>
-.img-container { test-align: center;}
-</style>
+<img src="figure/polyadb4_lr.png" margin-left: auto margin-right: auto >
 
-<div class="img-container">
-<img src="figure/polyadb4_lr.png">
-</div>
 
 <br>
 
