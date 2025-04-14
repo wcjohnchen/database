@@ -22,6 +22,8 @@ VI. References
 
 VII. Technologies
 
+VIII. Abbreviation
+
 <br>
 
 ## I. Introduction
@@ -50,31 +52,31 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 | Column | Description |
 | ------ | ---- |
-|Key |Unique identification for polyA site (gene symbol : chromosome : strand : position : type). |
+|Key |Unique identification for PAS (gene symbol : chromosome : strand : position : type). |
 |Gene Symbol |Abbreviation for gene name. |
-|PasID |PolyA site identification (chromosome : strand : position). |
+|PasID |PAS identification (chromosome : strand : position). |
 |Type |  |
-|PSE |Percentage of samples which polyA sites were expressed. 
-|AvgRPM |Mean RPM of polyA site. |
+|PSE |Percentage of samples which PASs were expressed. |
+|AvgRPM |Mean RPM of PAS. |
 |mm10_pAid |Conserved sites in mouse genome. |
-|NumRefSeq |Number of the polyA site reads annotated by RefSeq transcription end sites. |
-|NumLENCODE |Number of long-read transcription end sites (from the ENCODE4 PacBio IsoSeq dataset) that were matched to the polyA site location. |
-|NumLRGETx |Number of long-read transcription end sites (from the GTEx V9 ONT cDNA dataset) that were matched to the polyA site location. |
-|polyAID |Classification probability for putative polyA site within a sequence expected to occur (https://github.com/zhejilab/PolyaModelsHuman). |
-|polyAStregth |Score for the usage level of polyA site (https://github.com/zhejilab/PolyaModelsHuman). |
-|SVM |Predicted polyA site probability by support vector machine (polya_svm v1.1: https://exon.apps.wistar.org/polya_svm/). |
+|NumRefSeq |Number of the PAS reads annotated by RefSeq TESs. |
+|NumLENCODE |Number of long-read TESs (from the ENCODE4 PacBio IsoSeq dataset) that were matched to the PAS location. |
+|NumLRGETx |Number of long-read TESs (from the GTEx V9 ONT cDNA dataset) that were matched to the PAS location. |
+|polyAID |Classification probability for putative PAS within a sequence expected to occur (https://github.com/zhejilab/PolyaModelsHuman). |
+|polyAStregth |Score for the usage level of PAS (https://github.com/zhejilab/PolyaModelsHuman). |
+|SVM |Predicted PAS probability by support vector machine (polya_svm v1.1: https://exon.apps.wistar.org/polya_svm/). |
 
 
 
 <br>
 
-## VI. Acknowledgements
+## V. Acknowledgements
 
 I would like to express gratitude to Dr. Bin Tian’s lab for data availability and contribution.
 
 <br>
 
-## VII. Reference
+## VI. Reference
 
 Cheng Y, Miura RM, and Tian B.  2006.  Prediction of mRNA polyadenylation sites by support vector machine.  Bioinformatics, 22(19):2320-5.  doi: 10.1093/bioinformatics/btl394.
 
@@ -96,7 +98,12 @@ Zheng D, Liu X, and Tian B.  2016.  3'READS+, a sensitive and accurate method fo
 
 <br>
 
-## XI. Technologies
+## VII. Technologies
 
 Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Git, Linux, Machine Learning, Deep Learning
+
+## VIII Abbreviation
+
+PAS: polyA site
+TES: Transcription end site
 
