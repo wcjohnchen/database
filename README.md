@@ -1,6 +1,6 @@
 # Database Management for Polyadenylation Sites
 
-<img src="flask/static/db.jpg" width="20%" height="20%">
+<img src="flask/static/db.jpg" width="17.5%" height="17.5%">
 
 
 ## Table of Contents
