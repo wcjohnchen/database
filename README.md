@@ -16,7 +16,7 @@ II. Schema
 
 III. Column Description
 
-IV. F
+IV. Flask
 
 V. Technologies
 
@@ -31,7 +31,7 @@ VIII. References
 
 ## I. Introduction
 
-PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyadenylation (polyA) sites found in human genome using 3’READS+ deep sequencing.  The polyA sites were additionally supported by long read sequencing and data generated from machine learning, and annotated via NCBI database and by IsoQuant-assigned long reads of ENCODE and GTEx.  This database contains 658,880 entries, 638,089 unique polyA sites, and 33,614 unique genes, and is based on ~2.3 billion 3’READS+ sequencing reads and ~600 million long reads.
+PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyadenylation (polyA) sites found in human genome using 3’READS+ deep sequencing.  The polyA sites were additionally supported by long read sequencing and data generated from machine learning, and were annotated via NCBI database and by IsoQuant-assigned long reads of ENCODE and GTEx.  This database contains 658,880 entries, 638,089 unique polyA sites, and 33,614 unique genes, and is based on ~2.3 billion 3’READS+ sequencing reads and ~600 million long reads.
 
 
 <br>
@@ -52,24 +52,6 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 |NumLRGETx |NUMERIC(10) |CHECK(polyAID >=0) |
 |polyAID |NUMERIC(10,4) | |
 |SVM |NUMERIC(5,4) |CHECK(SVM >=0) |
-
-
-
-CREATE TABLE IF NOT EXISTS polyadb4_lr (
-                                    key VARCHAR(100) PRIMARY KEY NOT NULL,
-                                    gene_symbol VARCHAR(40) NOT NULL,
-                                    PasID VARCHAR(40) NOT NULL,
-                                    type_main VARCHAR(2) NOT NULL,
-                                    PSE NUMERIC(4,1) CHECK(PSE >= 0), 
-                                    AvgRPM NUMERIC(10,2) CHECK(AvgRPM >=0), 
-                                    mm10_pAid VARCHAR(40),
-                                    NumRefSeq NUMERIC(10) CHECK(NumRefSeq >=0), 
-                                    NumLRENCODE c CHECK(NumLRENCODE >=0), 
-                                    NumLRGETx NUMERIC(10) CHECK(NumLRGETx >=0),
-                                    polyAID NUMERIC(5,4) CHECK(polyAID >=0), 
-                                    polyAStrength NUMERIC(10,4),
-                                    SVM NUMERIC(5,4) CHECK(SVM >=0))
-
 
 
 <br>
@@ -96,7 +78,13 @@ CREATE TABLE IF NOT EXISTS polyadb4_lr (
 
 <br>
 
-## IV. F
+## IV. Flask
+
+Flask supports user interaction via web.
+
+<img src="figure/polyadb4_lr.png" width="12.5%" height="12.5%">
+
+
 
 **Figure 1**.  Histograms of the housing dataset.
 
@@ -108,7 +96,7 @@ CREATE TABLE IF NOT EXISTS polyadb4_lr (
 
 ## V. Technologies
 
-Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, VS Code, Git, Linux, Machine Learning, Deep Learning
+Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Flask, VS Code, Git, Linux, Machine Learning, Deep Learning
 
 
 <br>
