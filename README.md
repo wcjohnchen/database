@@ -16,7 +16,7 @@ II. Schema
 
 III. Column Description
 
-IV. Flask
+IV. Database Interaction via Web
 
 V. Technologies
 
@@ -78,12 +78,14 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 <br>
 
-## IV. Flask
+## IV. Database Interaction via Web
 
-Flask supports user database interaction via web.
+User database interaction via web is supported by Flask.
 
 <img src="figure/polyadb4_lr.png" >
 
+
+<img src="figure/gene_list.png" >
 
 
 **Figure 1**.  Histograms of the housing dataset.
