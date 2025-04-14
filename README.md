@@ -55,7 +55,7 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 |Key |Unique identification for PAS (gene symbol : chromosome : strand : position : type). |
 |Gene Symbol |Abbreviation for gene name. |
 |PasID |PAS identification (chromosome : strand : position). |
-|Type |  |
+|Type |Long-read-TES-supported polyA site category: TR: PAS found in terminal regions which are identified as aggregated overlapping 3’-most exon of isoform of each gene by RefSeq TES annotation; UR: upstream regions of TR;  DR: downstream regions of TR. |
 |PSE |Percentage of samples which PASs were expressed. |
 |AvgRPM |Mean RPM of PAS. |
 |mm10_pAid |Conserved sites in mouse genome. |
@@ -67,16 +67,28 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 |SVM |Predicted PAS probability by support vector machine (polya_svm v1.1: https://exon.apps.wistar.org/polya_svm/). |
 
 
+<br>
+
+## V. Technologies
+
+Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Git, Linux, Machine Learning, Deep Learning
 
 <br>
 
-## V. Acknowledgements
+## VI. Abbreviation
+
+PAS: polyA site
+TES: Transcription end site
+
+<br>
+
+## VII. Acknowledgements
 
 I would like to express gratitude to Dr. Bin Tian’s lab for data availability and contribution.
 
 <br>
 
-## VI. Reference
+## VII. Reference
 
 Cheng Y, Miura RM, and Tian B.  2006.  Prediction of mRNA polyadenylation sites by support vector machine.  Bioinformatics, 22(19):2320-5.  doi: 10.1093/bioinformatics/btl394.
 
@@ -96,14 +108,4 @@ Zhang H, Hu J, Recce M, and Tian B.  2005.  PolyA_DB: a database for mammalian m
 
 Zheng D, Liu X, and Tian B.  2016.  3'READS+, a sensitive and accurate method for 3' end sequencing of polyadenylated RNA.  RNA, 22(10):1631-9.  doi: 10.1261/rna.057075.116.
 
-<br>
-
-## VII. Technologies
-
-Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Git, Linux, Machine Learning, Deep Learning
-
-## VIII Abbreviation
-
-PAS: polyA site
-TES: Transcription end site
 
