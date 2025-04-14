@@ -48,10 +48,10 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 |AvgRPM |NUMERIC(10,2) |CHECK(AvgRPM >=0) |
 |mm10_pAid |VARCHAR(40) | |
 |NumRefSeq |NUMERIC(10) |CHECK(NumRefSeq >=0) |
-|NumLENCODE | | |
-|NumLRGETx | | |
-|polyAID | | |
-
+|NumLENCODE |NUMERIC(10) |CHECK(NumLRENCODE >=0) |
+|NumLRGETx |NUMERIC(10) |CHECK(polyAID >=0) |
+|polyAID |NUMERIC(10,4) | |
+|SVM |NUMERIC(5,4) |CHECK(SVM >=0) |
 
 
 
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS polyadb4_lr (
                                     AvgRPM NUMERIC(10,2) CHECK(AvgRPM >=0), 
                                     mm10_pAid VARCHAR(40),
                                     NumRefSeq NUMERIC(10) CHECK(NumRefSeq >=0), 
-                                    NumLRENCODE NUMERIC(10) CHECK(NumLRENCODE >=0), 
+                                    NumLRENCODE c CHECK(NumLRENCODE >=0), 
                                     NumLRGETx NUMERIC(10) CHECK(NumLRGETx >=0),
                                     polyAID NUMERIC(5,4) CHECK(polyAID >=0), 
                                     polyAStrength NUMERIC(10,4),
