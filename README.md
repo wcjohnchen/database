@@ -21,13 +21,13 @@ VII. References
 
 XI. Technologies
 
-
+<br>
 ## I. Introduction
 
 PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyadenylation (polyA) sites found in human genome using 3’READS+ deep sequencing.  The polyA sites were additionally supported by long read sequencing and data generated from machine learning, and annotated via NCBI database and by IsoQuant-assigned long reads of ENCODE and GTEx.  This database contains 658,880 entries, 638,089 unique polyA sites, and 33,614 unique genes, and is based on ~2.3 billion 3’READS+ sequencing reads and ~600 million long reads.
 
 
-
+<br>
 ## II. Schema
 
 
@@ -70,12 +70,12 @@ Lasso regression: best parameters: {'alpha': 0.001}
 ![](figure/test_rmse_lr.png)
 
 
-
+<br>
 ## VI. Acknowledgements
 
 I would like to express gratitude to Dr. Bin Tian’s lab for data availability and contribution.
 
-
+<br>
 ## VII. Reference
 
 Cheng Y, Miura RM, and Tian B.  2006.  Prediction of mRNA polyadenylation sites by support vector machine.  Bioinformatics, 22(19):2320-5.  doi: 10.1093/bioinformatics/btl394.
@@ -96,7 +96,7 @@ Zhang H, Hu J, Recce M, and Tian B.  2005.  PolyA_DB: a database for mammalian m
 
 Zheng D, Liu X, and Tian B.  2016.  3'READS+, a sensitive and accurate method for 3' end sequencing of polyadenylated RNA.  RNA, 22(10):1631-9.  doi: 10.1261/rna.057075.116.
 
-
+<br>
 ## XI. Technologies
 
 Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Git, Linux, Machine Learning, Deep Learning
