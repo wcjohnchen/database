@@ -94,7 +94,7 @@ Figure 2.  Querying for a specific gene.
 
 ## V. Technologies
 
-Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Flask, VS Code, Git, Linux, Machine Learning, Deep Learning
+Bioinformatics, Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Flask, VS Code, Git, Linux, Machine Learning, Deep Learning
 
 
 <br>
