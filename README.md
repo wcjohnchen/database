@@ -3,7 +3,7 @@
 
 <br>
 
-<img src="flask/static/db.jpg" width="12.5%" height="12.5%">
+<img src="figure/polyadb4_lr.png" >
 
 
 <br>
@@ -58,7 +58,6 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 ## III. Column Description
 
-
 | Column | Description |
 | ---- | ---- |
 |Key |Unique identification for PAS (gene symbol : chromosome : strand : position : type). |
@@ -80,21 +79,14 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 ## IV. Database Interaction via Web
 
-Figure I.  User database interaction via web is supported by Flask.
-
-<img src="figure/polyadb4_lr.png" >
-
-
-<br>
-
-Figure II.  Viewing a list of available genes in the database.
+Figure 1.  Viewing a list of available genes in the database.  User database interaction via web is supported by Flask.
 
 <img src="figure/gene_list.png" >
 
 
 <br>
 
-Figure III.  Querying for CSTF3 gene.
+Figure 2.  Querying for a specific gene.
 
 <img src="figure/query_gene.png" >
 
