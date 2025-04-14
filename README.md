@@ -115,7 +115,7 @@ I would like to thank Dr. Bin Tian’s lab for data availability and contributio
 
 <br>
 
-## VII. References
+## VIII. References
 
 Cheng Y, Miura RM, and Tian B.  2006.  Prediction of mRNA polyadenylation sites by support vector machine.  Bioinformatics, 22(19):2320-5.  doi: 10.1093/bioinformatics/btl394.
 
