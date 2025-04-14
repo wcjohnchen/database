@@ -82,7 +82,7 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 Flask supports user database interaction via web.
 
-<img src="figure/polyadb4_lr.png" width="100%" height="1oo%">
+<img src="figure/polyadb4_lr.png" >
 
 
 
