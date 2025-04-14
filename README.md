@@ -67,7 +67,7 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 |Type |Long-read-TES-supported polyA site category: TR: PAS found in terminal regions, in which the regions are identified as aggregated overlapping 3’-most exon of isoform of each gene by RefSeq TES annotation; UR: upstream regions of TR;  DR: downstream regions of TR. |
 |PSE |Percentage of samples which PASs were expressed. |
 |AvgRPM |Mean RPM of PAS. |
-|mm10_pAid |Conserved sites in mouse genome. |
+|mm10_pAid |Conserved sites in mouse genome. "nc" = not conserved. |
 |NumRefSeq |Number of the PAS reads annotated by RefSeq TESs. |
 |NumLENCODE |Number of long-read TESs (from the ENCODE4 PacBio IsoSeq dataset) that were matched to the PAS location. |
 |NumLRGETx |Number of long-read TESs (from the GTEx V9 ONT cDNA dataset) that were matched to the PAS location. |
@@ -80,18 +80,23 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 ## IV. Database Interaction via Web
 
-User database interaction via web is supported by Flask.
+Figure I.  User database interaction via web is supported by Flask.
 
 <img src="figure/polyadb4_lr.png" >
 
 
+<br>
+
+Figure II.  Viewing a list of available genes in the database.
+
 <img src="figure/gene_list.png" >
 
 
-**Figure 1**.  Histograms of the housing dataset.
+<br>
 
-![](figure/histograms.png)
+Figure III.  Querying for CSTF3 gene.
 
+<img src="figure/query_gene.png" >
 
 
 <br>
