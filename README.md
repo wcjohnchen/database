@@ -77,7 +77,8 @@ Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Git, Linux, Machi
 
 ## VI. Abbreviation
 
-PAS: polyA site
+PAS: polyA site <br>
+
 TES: Transcription end site
 
 <br>
