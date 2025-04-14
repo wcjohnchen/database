@@ -31,7 +31,7 @@ VIII. References
 
 ## I. Introduction
 
-PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyadenylation (polyA) sites found in human genome using 3’READS+ deep sequencing.  The polyA sites were additionally supported by long read sequencing and data generated from machine learning, and were annotated via NCBI database and by IsoQuant-assigned long reads of ENCODE and GTEx.  This database contains 658,880 entries, 638,089 unique polyA sites, and 33,614 unique genes, and is based on ~2.3 billion 3’READS+ sequencing reads and ~600 million long reads.
+PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyadenylation (polyA) sites found in human genome (hg38) using 3’READS+ deep sequencing.  The polyA sites are additionally supported by long read sequencing and data generated from machine learning, and are annotated via NCBI database and by IsoQuant-assigned long reads of ENCODE and GTEx.  This database contains 658,880 entries, 638,089 unique polyA sites, and 33,614 unique genes, and is based on ~2.3 billion 3’READS+ sequencing reads and ~600 million long reads.
 
 
 <br>
@@ -66,7 +66,7 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 |Type |Long-read-TES-supported polyA site category: TR: PAS found in terminal regions, in which the regions are identified as aggregated overlapping 3’-most exon of isoform of each gene by RefSeq TES annotation; UR: upstream regions of TR;  DR: downstream regions of TR. |
 |PSE |Percentage of samples which PASs were expressed. |
 |AvgRPM |Mean RPM of PAS. |
-|mm10_pAid |Conserved sites in mouse genome. "nc" = not conserved. |
+|mm10_pAid |Conserved sites in mouse genome (mm10). Non-conserved sites are labeled as "nc". |
 |NumRefSeq |Number of the PAS reads annotated by RefSeq TESs. |
 |NumLENCODE |Number of long-read TESs (from the ENCODE4 PacBio IsoSeq dataset) that were matched to the PAS location. |
 |NumLRGETx |Number of long-read TESs (from the GTEx V9 ONT cDNA dataset) that were matched to the PAS location. |
