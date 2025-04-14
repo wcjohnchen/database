@@ -152,9 +152,9 @@ Learning rate = 0.000001, optimizer = adam, epoch = 100 total
 
 Test accuracy = 0.5861, precision = 0.5305, recall = 0.6046
 
-## VI. Summary
+## VI. Acknowledgements
 
-This study performed several machine learning models to predict housing prices for regression and classification.  Gradient boosting regression outperforms all other models with the highest R2.  Present CNN model was built on a simple two convolutional layers.  A deeper network and further tuning of hyperparameters may be neccessary for future improvement.
+
 
 
 ## VII. Reference
@@ -177,62 +177,3 @@ Zhang H, Hu J, Recce M, and Tian B.  2005.  PolyA_DB: a database for mammalian m
 
 Zheng D, Liu X, and Tian B.  2016.  3'READS+, a sensitive and accurate method for 3' end sequencing of polyadenylated RNA.  RNA, 22(10):1631-9.  doi: 10.1261/rna.057075.116.
 
-
-
-**Convolutional Neural Network**.  In the first CNN model, there was a clear overfitting of the training set.  The validation loss was higher than training loss, and steadily increasing.  To improve the model, more CNN layers were added; however, with slightly less trainable parameters.   Batch normalizaton layers were also added.  Furthermore, the optimizer was changed from adam to stochastic gradient descent (SGD) with nesterov (momentum=0.9, decay=1e-6).  The dropout rate was increased from 0.1 to 0.2.  The image size was reduced from (300, 300) to (256, 256).  The new CNN architecture was shown here: https://github.com/wcjohnchen/capstoneProject2/blob/main/data/cnn_architecture.txt.  It may also be useful to apply kernel regularizer (on weights) and/or activity regularizer (on layer output) to the convolutional layers or consider transfer learning strategies in order to achieve a higher accurary in the future implementation.
-
-
-Learning rate = 0.00005, optimizer = SGD.
-
-**Supplementary Figure 1**.  A plot of train vs validation accuracy.
-
-![](figure/accuracy.jpg)
-
-
-
-**Supplementary Figure 2**.  A plot of train vs validation loss.
-
-
-![](figure/loss.jpg)
-
-
-Train accuracy: 0.5744; precision: 0.5994; recall: 0.4619.
-
-Test accuracy: 0.5492; precision: 0.5790; recall: 0.4465.
-
-
-With the model fitted, the CNN model shows an accuracy of 54.9% for the test set for this image classification study.
-
-
-**Random Forest, Gradient Boosting, and Extreme Gradient Boosting Classifiers**.  Random forest, gradient boosting, and XGBoost models for classification were also added.  Both gradient boosting and XGBoost models achieved high accurary of 84.2% on the test set.
-
-Random forest classifier: best parameters: {'max_depth': None, 'max_features': 'auto', 'min_samples_leaf': 1, 'n_estimators': 300, 'oob_score': True}
-
-Gradient boosting classifier:  best parameters: {'learning_rate': 0.05, 'max_depth': 5, 'max_features': 'auto', 'n_estimators': 4500, 'subsample': 0.15}
-
-XGBoost: best parameters: best parameters: {'colsample_bytree': 0.9, 'gamma': 0.5, 'learning_rate': 0.1, 'max_depth': 7, 'min_child_weight': 1, 'n_estimators': 3500, 'subsample': 0.9}
-
-
-**Supplementary Figure 3**.  A confusion matrix for gradient boosting classification.
-
-![](figure/confusion_matrix.jpg)
-
-
-**Supplementary Table 1**.  Overall training and test results for classification.
-
-![](figure/summary_classification.jpg)
-
-
-**Flask Application**.  Flask was implemented to integrate the gradient boosting classification model into the web application for housing prediction in Southern California.  User may input the name of city, number of bedroom, bathroom, and squared feet.  The output will display one of three following classes: low price (under 499,999), medium price (between 500,000 and 999,999), or high price (above 1,000,000).
-
-
-**Supplementary Figure 4**.  A Flask application for maching learning.  The gradient boosting classification model was embedded.  (A) An input example that was classified as 'above 1,000,000', and (B) another example classified as 'under 499,999'.
-
-A)
-
-![](figure/flaskapp.jpg)
-
-
-B)
-
-![](figure/flaskapp2.jpg)
