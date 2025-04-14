@@ -38,16 +38,16 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 ## II. Schema
 
-| Column Name | Data Type | Constraint |
+| Column | Data Type | Constraint |
 | ---- | ---- | ---- |
 |Key |VARCHAR(100) |PRIMARY KEY NOT NULL |
 |Gene Symbol |VARCHAR(40) |NOT NULL |
-|PasID | | |
-|Type | | |
-|PSE | | |
-|AvgRPM | | |
-|mm10_pAid | | |
-|NumRefSeq | | |
+|PasID |VARCHAR(40) |NOT NULL |
+|Type |VARCHAR(2) |NOT NULL |
+|PSE |NUMERIC(4,1) |CHECK(PSE >= 0) |
+|AvgRPM |NUMERIC(10,2) |CHECK(AvgRPM >=0) |
+|mm10_pAid |VARCHAR(40) | |
+|NumRefSeq |NUMERIC(10) |CHECK(NumRefSeq >=0) |
 |NumLENCODE | | |
 |NumLRGETx | | |
 |polyAID | | |
