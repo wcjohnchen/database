@@ -2,6 +2,7 @@
 
 <img src="flask/static/db.jpg" width="12.5%" height="12.5%">
 
+<br>
 
 ## Table of Contents
 
@@ -58,8 +59,10 @@ Ridge regression: best parameters: {'alpha': 0.0}
 Lasso regression: best parameters: {'alpha': 0.001}
 
 
-
-
+|Key |PasID |
+|---- | --- |
+|ads |chr3 |
+|tes |chr2 |
 
 
 **Figure 5**.  Gradient boosting regression: training set: RMSE vs learing rate at specific estimators.
