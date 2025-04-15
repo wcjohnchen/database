@@ -23,11 +23,11 @@ def query():
         genename = request.form.get('gene')
 
 
-        hostname = 'localhost' # <--- enter hostname
-        database = 'mydatabase' # <--- enter database name
-        username = 'wcjohnchen2022' # <--- enter username
-        pwd = 'guaiguai0730C' # <--- enter password
-        port_id = 5432 # <--- enter port id
+        hostname = '' # <--- enter hostname
+        database = '' # <--- enter database name
+        username = '' # <--- enter username
+        pwd = '' # <--- enter password
+        port_id =  # <--- enter port id
         conn = None
         tablename= 'polyadb4_lr' # <--- enter table name
 
