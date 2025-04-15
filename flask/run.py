@@ -23,11 +23,11 @@ def query():
         genename = request.form.get('gene')
 
 
-        hostname = '' # <--- enter hostname
-        database = '' # <--- enter database name
-        username = '' # <--- enter username
-        pwd = '' # <--- enter password
-        port_id =  # <--- enter port id
+        hostname = 'localhost' # <--- enter hostname
+        database = 'mydatabase' # <--- enter database name
+        username = 'wcjohnchen2022' # <--- enter username
+        pwd = 'guaiguai0730C' # <--- enter password
+        port_id = 5432 # <--- enter port id
         conn = None
         tablename= 'polyadb4_lr' # <--- enter table name
 
@@ -47,13 +47,13 @@ def query():
                         conn.commit()                  
                     elif "," not in genename:
                         genename = genename.strip()
-                        cur.execute(f"SELECT * FROM {tablename} WHERE gene_symbol = '{genename}' ORDER BY type_main ASC")
+                        cur.execute(f"SELECT * FROM {tablename} WHERE gene_symbol = '{genename}' ORDER BY type_main ASC, PasID ASC")
                         data = cur.fetchall()
                         conn.commit()
                     else:
                         list = [item.strip() for item in genename.split(",")]       
                         list=tuple(list)
-                        cur.execute(f"SELECT * FROM {tablename} WHERE gene_symbol IN {list} ORDER BY gene_symbol ASC, type_main ASC")
+                        cur.execute(f"SELECT * FROM {tablename} WHERE gene_symbol IN {list} ORDER BY gene_symbol ASC, type_main ASC, PasID ASC")
                         data = cur.fetchall()
                         conn.commit()
 
