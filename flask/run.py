@@ -9,7 +9,7 @@ import psycopg2.extras
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/') # Homepage
 def home():
     return render_template('index.html')
 
@@ -41,14 +41,24 @@ def query():
                 with conn.cursor(cursor_factory=psycopg2.extras.DictCursor) as cur:
 
 
-                    if genename == 'LIST':         
+                    if genename == 'LIST':
                         cur.execute(f"SELECT DISTINCT(gene_symbol) FROM {tablename} ORDER BY gene_symbol ASC")
                         data = cur.fetchall()
                         conn.commit()                  
-                    else:                                          
+                    elif "," not in genename:
+                        genename = genename.strip()
                         cur.execute(f"SELECT * FROM {tablename} WHERE gene_symbol = '{genename}' ORDER BY type_main ASC")
                         data = cur.fetchall()
                         conn.commit()
+                    else:
+                        list = [item.strip() for item in genename.split(",")]       
+                        list=tuple(list)
+                        cur.execute(f"SELECT * FROM {tablename} WHERE gene_symbol IN {list} ORDER BY gene_symbol ASC, type_main ASC")
+                        data = cur.fetchall()
+                        conn.commit()
+
+
+
 
         except Exception as error:
             print(error)
