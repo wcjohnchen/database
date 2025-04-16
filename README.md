@@ -3,7 +3,7 @@
 
 <br>
 
-<img src="figure/polyadb4_lr.png" margin-left: auto margin-right: auto >
+<img src="figure/database.png" margin-left: auto margin-right: auto >
 
 
 <br>
