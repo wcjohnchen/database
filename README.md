@@ -16,7 +16,7 @@ II. Schema
 
 III. Column Description
 
-IV. Database Interaction via Web
+IV. Database Interaction
 
 V. Technologies
 
@@ -77,7 +77,7 @@ PolyADB4-LR database (v4.01-LR) stores information for an extended set of polyad
 
 <br>
 
-## IV. Database Interaction via Web
+## IV. Database Interaction
 
 Figure 1.  Viewing a list of available genes in the database.  User database interaction via web is supported by Flask.
 
