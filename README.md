@@ -18,13 +18,15 @@ III. Column Description
 
 IV. Database Interaction
 
-V. Technologies
+V. Notes
 
-VI. Abbreviation
+VI. Technologies
 
-VII. Acknowledgements
+VII. Abbreviation
 
-VIII. References
+VIII. Acknowledgements
+
+XI. References
 
 
 <br>
@@ -92,14 +94,21 @@ Figure 2.  Querying for a specific gene.
 
 <br>
 
-## V. Technologies
+## V. Notes
+
+Data may also be stored as an unstructured format in a NoSQL database, using MongoDB Compass and related applications.
+
+
+<br>
+
+## VI. Technologies
 
 Bioinformatics, Database, PostgreSQL, SQL, pgAdmin4, Jupyter Notebook, Python, Flask, VS Code, Git, Linux, Machine Learning, Deep Learning
 
 
 <br>
 
-## VI. Abbreviation
+## VII. Abbreviation
 
 PAS: polyA site <br>
 
@@ -108,14 +117,14 @@ TES: Transcription end site
 
 <br>
 
-## VII. Acknowledgements
+## VIII. Acknowledgements
 
 I would like to thank Dr. Bin Tian’s lab for data availability and contribution.
 
 
 <br>
 
-## VIII. References
+## XI. References
 
 Cheng Y, Miura RM, and Tian B.  2006.  Prediction of mRNA polyadenylation sites by support vector machine.  Bioinformatics, 22(19):2320-5.  doi: 10.1093/bioinformatics/btl394.
 
