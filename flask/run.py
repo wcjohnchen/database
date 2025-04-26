@@ -29,7 +29,7 @@ def query():
         pwd = '' # <--- enter password
         port_id =  # <--- enter port id
         conn = None
-        tablename= 'polyadb4_lr' # <--- enter table name
+        tablename= 'polyadb_lr' # <--- enter table name
 
         try:
             with psycopg2.connect(
