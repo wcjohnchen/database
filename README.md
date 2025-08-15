@@ -119,7 +119,7 @@ TES: Transcription end site
 
 ## VIII. Acknowledgements
 
-I would like to thank Dr. Bin Tian’s lab for data availability and contribution.
+I would like to thank Dr. Bin Tian’s lab for data availability and contribution.  (Further development is tentatively in progress in the lab for the next full version release.)
 
 
 <br>
