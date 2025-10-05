@@ -96,8 +96,7 @@ Figure 2.  Querying for a specific gene.
 
 ## V. Notes
 
-Data may also be stored as an unstructured format in a NoSQL database, using MongoDB Compass and related applications.
-
+---
 
 <br>
 
